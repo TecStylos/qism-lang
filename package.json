@@ -1,0 +1,25 @@
+{
+    "name": "qism-lang",
+    "displayName": "QISM Lang",
+    "description": "Syntax highlighting for QISM",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "qism",
+            "aliases": ["QISM", "qism"],
+            "extensions": [".qsm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "qism",
+            "scopeName": "source.qsm",
+            "path": "./syntaxes/qism.tmLanguage.json"
+        }]
+    }
+}

@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "QISM",
+	"patterns": [
+		{
+			"include": "#instructions"
+		},
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#modifiers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#literals"
+		},
+		{
+			"include": "#identifiers"
+		}
+	],
+	"repository": {
+		"instructions": {
+			"patterns": [
+				{
+					"name": "keyword.control.qism",
+					"match": "\\b(add|sub|and|or|xor|jz|jnz|jgz|jlz|jge|jle|jrz|jrnz|jrgz|jrlz|jrge|jrle|st|ld|lui|lli|li)\\b"
+				},
+				{
+					"name": "keyword.other.qism",
+					"match": "\\.entry"
+				}
+			]
+		},
+		"registers": {
+			"name": "storage.type.qism",
+			"match": "\\b(zero|gp|sp|bp|ra|r0|r1|r2|r3|r4|r5|r6|r7|r8|r9|r10)\\b"
+		},
+		"modifiers": {
+			"name": "keyword.operator.qism",
+			"match": "\\b(rel|upr|lwr)\\b"
+		},
+		"strings": {
+			"name": "string.quoted.double.qism",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.qism",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.qism",
+			"begin": "\\~\\~",
+			"end": "$\\n",
+			"patterns": [
+				{
+					"name": "markup.bold.qism",
+					"match": "\\b(TODO|FIXME|NOTE|HACK)\\b"
+				}
+			]
+		},
+		"literals": {
+			"patterns": [
+				{
+					"name": "constant.numeric.qism",
+					"match": "\\b(0[xX][0-9a-fA-F]+|0[bB][01]+|[0-9]+)\\b"
+				},
+				{
+					"name": "constant.language.qism",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "string.quoted.single.qism",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.qism",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.other.qism",
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.qsm"
+}
