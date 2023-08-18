@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.qism",
-					"match": "\\b(add|sub|and|or|xor|jz|jnz|jgz|jlz|jge|jle|jrz|jrnz|jrgz|jrlz|jrge|jrle|st|ld|lui|lli|li)\\b"
+					"match": "\\b(add|sub|and|or|xor|jz|jnz|jgz|jlz|jge|jle|jrz|jrnz|jrgz|jrlz|jrge|jrle|st|ld|lui|lli|li|int)\\b"
 				},
 				{
 					"name": "keyword.other.qism",
@@ -39,7 +39,7 @@
 		},
 		"registers": {
 			"name": "storage.type.qism",
-			"match": "\\b(zero|gp|sp|bp|ra|r0|r1|r2|r3|r4|r5|r6|r7|r8|r9|r10)\\b"
+			"match": "\\b(zero|gp|sp|bp|ra|r0|r1|r2|r3|r4|r5|r6|r7|rinp|rssd|rled)\\b"
 		},
 		"modifiers": {
 			"name": "keyword.operator.qism",
