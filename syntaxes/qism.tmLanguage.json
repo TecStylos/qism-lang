@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.qism",
-					"match": "\\b(add|sub|and|or|xor|jz|jnz|jgz|jlz|jge|jle|jrz|jrnz|jrgz|jrlz|jrge|jrle|st|ld|lui|lli|li|int)\\b"
+					"match": "\\b(add|sub|and|or|xor|jz|jnz|jgz|jlz|jge|jle|jrz|jrnz|jrgz|jrlz|jrge|jrle|st|ld|lui|lli|li|int|not|neg|inc|dec|jmp|jpr|mov)\\b"
 				},
 				{
 					"name": "keyword.other.qism",
