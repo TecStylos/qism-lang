@@ -4,7 +4,7 @@
     "description": "Syntax highlighting for QISM",
     "repository": "https://github.com/TecStylos/qism-lang.git",
     "publisher": "TecStylos",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.66.0"
     },
