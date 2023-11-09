@@ -2,13 +2,13 @@
     "name": "qism-lang",
     "displayName": "QISM Lang",
     "description": "Syntax highlighting for QISM",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.66.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/TecStylos/qism-lang.git"
+        "url": "https://github.com/eQosys/qism-lang.git"
     },
     "publisher": "TecStylos",
     "categories": [
