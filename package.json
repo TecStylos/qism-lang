@@ -2,7 +2,8 @@
     "name": "qism-lang",
     "displayName": "QISM Lang",
     "description": "Syntax highlighting for QISM",
-    "version": "0.0.5",
+    "icon": "images/eQosys-logo-round.png",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.66.0"
     },
